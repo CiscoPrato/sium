@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Te ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.3em;
+            margin: 15px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1.5s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.3); }
+        }
+
+        button {
+            background: #ff758c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #ff5470;
+        }
+    </style>
+</head>
+<body>
+
+    <p>So che stai attraversando un momento difficile, ma voglio ricordarti una cosa importante:</p>
+    <p><strong>Sei forte, intelligente e capace. Supererai anche questa!</strong></p>
+
+    <div class="heart">💖</div>
+
+    <button onclick="mostraMessaggio()">Clicca per una sorpresa!</button>
+
+    <p id="messaggio" style="display:none; font-weight:bold;">🌟 Più cringe era impossibile 🌟</p>
+
+    <script>
+        function mostraMessaggio() {
+            document.getElementById("messaggio").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
